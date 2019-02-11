@@ -21,7 +21,7 @@ class SpeechRecognition {
 
   AvailabilityHandler availabilityHandler;
 
-  StringResultHandler currentLocaleHandler;
+  String currentLocaleHandler;
   StringResultHandler recognitionResultHandler;
 
   VoidCallback recognitionStartedHandler;
@@ -85,7 +85,7 @@ class SpeechRecognition {
   void setRecognitionCompleteHandler(var handler) =>
       recognitionCompleteHandler = handler;
 
-  void setCurrentLocaleHandler(StringResultHandler handler) =>
+  void setCurrentLocaleHandler(String handler) =>
       currentLocaleHandler = handler;
   
   void setErrorHandler(VoidCallback handler) => errorHandler = handler;
