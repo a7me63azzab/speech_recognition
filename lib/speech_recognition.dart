@@ -26,7 +26,7 @@ class SpeechRecognition {
 
   VoidCallback recognitionStartedHandler;
 
-  StringResultHandler recognitionCompleteHandler;
+  var recognitionCompleteHandler;
   
   VoidCallback errorHandler;
 
@@ -82,7 +82,7 @@ class SpeechRecognition {
       recognitionStartedHandler = handler;
 
   // define a method to handle native call
-  void setRecognitionCompleteHandler(StringResultHandler handler) =>
+  void setRecognitionCompleteHandler(var handler) =>
       recognitionCompleteHandler = handler;
 
   void setCurrentLocaleHandler(StringResultHandler handler) =>
